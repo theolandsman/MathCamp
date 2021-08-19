@@ -74,11 +74,17 @@ options(digits=7) # before we continue let's change the setting back to the defa
 #### WORKING DIRECTORY
 ##
 
+## Opening a project automatically sets your working directory to the project directory. 
+
 # The "working directory" that you set becomes the default file path for all files that you want to read into R
 #   Note that some people don't use the working directory option. Why?
 #   Here's one argument against it: https://www.tidyverse.org/articles/2017/12/workflow-vs-script/ 
-#   I usually don't because I access files that are in different folders for one project (so it doesn't save me any time)
+#   Basically, if your workflow involves pulling files from a bunch of different folders, it is a waste of time to 
+#   set a working directory.
+#   Or to put it differently if your file system is disorganized, you will waste a lot of time finding things and 
+#   specifying correct filepaths regardless of whether you use a working directory or not. 
 
+# If you don't use projects functionality, you can set the working directory manually. 
 # Setting the working directory:
 # Mac
 setwd("Users/TLandsman/Documents/Georgetown_Fall_2021/Math_Camp") # note that slashes need to be reversed on Windows
@@ -142,7 +148,7 @@ library(readxl)
 ExampleExcel <- read_excel("ExampleExcel.xlsx")
 
 # Importing one sheet from an Excel file with multiple sheets
-World_GDPpc <- read_excel("World.xlsx", sheet = "GDPpc")
+congress116 <- read_excel("Congress116.xlsx", sheet = "House")
 
 #
 ## Stata, SPSS, and SAS files
