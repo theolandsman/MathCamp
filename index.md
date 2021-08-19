@@ -13,5 +13,5 @@
 
 *[Women in Government Dataset](https://theolandsman.github.io/MathCamp/WomenGov10.csv)
 
-*[Congress Dataset](https://theolandsman.github.io/MathCamp/Congress116.csv)
+*[Congress Dataset](https://theolandsman.github.io/MathCamp/Congress116.xlsx)
 
