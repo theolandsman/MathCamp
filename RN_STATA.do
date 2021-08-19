@@ -24,11 +24,14 @@ display 36^2  //can also shorted to "di"
 
 // ____________________________________________________________________
 
-// Unlike R, STATA is not object oriented, the primary unit of STATA analysis
-//  is the variable within a dataset. Only one dataset can be loaded into 
-// STATA at a time, however, it is possible to temporally store constants 
-// and vectors in memory without assigning them to a variable. 
+/* Unlike R, STATA is not object oriented, the primary unit of STATA analysis
+   is the variable within a dataset. Only one dataset can be loaded into 
+   STATA at a time, however, it is possible to temporally store constants 
+   and vectors in memory without assigning them to a variable. */
 
+// ____________________________________________________________________
+   
+   
 scalar math = 8*9 +3
 display math * 4
 
@@ -58,8 +61,11 @@ display math * 4
 */
 
 // You'll need to set your "working directory"
-// Note that slashes should be reversed for Mac users
+// Windows Users
 cd "C:\Users\TLandsman\Documents\Georgetown_Fall_2021\MathCamp" 
+
+/// Mac Users 
+cd "/Users/theolandsman/Documents/GOVT_Math_Camp"
 pwd // to check current directory
 
 // You'll need to clear memory whenever you want to use a new dataset
@@ -76,7 +82,7 @@ import delimited "csvexample.csv"
 import excel "Excelexample.xlsx" firstrow // "first row" means row 1 is variable names
 
 // Importing certain sheet from Excel file:
-import excel "Excelexample.xlsx", sheet("SheetName") firstrow
+import excel "Congress116.xlsx", sheet("House") firstrow
 
 // ____________________________________________________________________
 
