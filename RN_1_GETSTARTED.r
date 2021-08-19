@@ -125,7 +125,6 @@ library(readr)
 girlpower <- read_csv("C:/Users/krolf/OneDrive/Documents/_Georgetown Fall 2020/WomenGov10.csv")
 
 # If you did set a working directory, you'll only have to write the file name (example for a csv file):
-install.packages("readr")
 library(readr)
 girlpower <- read_csv("WomenGov10.csv") # see why some people like to set a working directory? :)
 
