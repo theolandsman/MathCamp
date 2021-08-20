@@ -15,3 +15,6 @@
 
 *[Congress Dataset](https://theolandsman.github.io/MathCamp/Congress116.xlsx)
 
+*[Slides Day Five](https://theolandsman.github.io/MathCamp/GOVT_PhD_Math_Camp__Practice_Day_5.pdf)
+
+
